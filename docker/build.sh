@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t vhenrique/pcs3746 .
+docker build -t vhenrique21/pcs3746 .
