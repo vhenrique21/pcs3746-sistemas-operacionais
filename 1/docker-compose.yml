@@ -5,8 +5,8 @@ services:
       context: ../docker
       cache_from:
         - ununtu:16.04
-        - vhenrique/pcs3746:latest
-    image: vhenrique/pcs3746:latest 
+        - vhenrique21/pcs3746:latest
+    image: vhenrique21/pcs3746:latest 
     container_name: pcs3746-container 
     volumes:  
       - ../linux:/home/student/src/linux 
