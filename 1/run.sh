@@ -1,2 +1,3 @@
 #!/bin/bash
-docker run -ti --rm -v "$PWD/linux":/home/student/src/linux -v "$PWD/initramfs":/home/student/src/initramfs tiagoshibata/pcs3746
+docker kill pcs3746-container || true &&
+docker run -ti --rm --name pcs3746-container -v "$PWD/linux":/home/student/src/linux -v "$PWD/initramfs":/home/student/src/initramfs vhenrique/pcs3746
