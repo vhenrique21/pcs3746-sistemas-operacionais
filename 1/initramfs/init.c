@@ -7,13 +7,10 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
-#include "hello_world.h"
-
-#include "stack.h"
 
 #define len(_arr) ((int)((&_arr)[1] - _arr))
 
-static const char * const programs[] = { "/stack_push", "/stack_pop" };
+static const char * const programs[] = { "/read_text" };
 
 void panic(const char *msg)
 {
@@ -33,8 +30,7 @@ void mount_fs()
 
 int main()
 {
-	printf("Custom initramfs - Hello World syscall:\n");
-	hello_world();
+	printf("Custom initramfs - Read Text:\n");
 	mount_fs();
 
 	printf("Forking to run %d programs\n", len(programs));
@@ -45,7 +41,7 @@ int main()
 		if (pid == -1) {
 			panic("fork");
 		} else if (pid) {
-			printf("Starting %s (pid = %d)\n", path, pid);
+			printf("Starting %s (pid = %d)\n\n", path, pid);
 		} else {
 			execl(path, path, (char *)NULL);
 			panic("execl");
@@ -66,7 +62,9 @@ int main()
 	}
 
 	printf("init finished\n");
+
 	for (;;)
 		sleep(1000);
+
 	return 0;
 }

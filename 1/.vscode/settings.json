@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "hello_world.h": "c",
+        "unistd.h": "c",
+        "*.txt": "c"
+    }
+}

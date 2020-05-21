@@ -1,0 +1,7 @@
+{
+    "debug.node.autoAttach": "off",
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "limits": "c"
+    }
+}
