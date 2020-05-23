@@ -23,7 +23,7 @@ int main()
          break;
    };
 
-   printf("\n OK! \n\n\n");
+   // printf("\n OK! \n\n\n");
    close(fd);
 
    return 0;

@@ -63,8 +63,8 @@ int main()
 
 	printf("init finished\n");
 
-	for (;;)
-		sleep(1000);
+	// for (;;)
+	// 	sleep(1000);
 
 	return 0;
 }
