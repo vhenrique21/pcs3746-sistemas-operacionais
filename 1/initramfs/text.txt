@@ -1,1 +1,19 @@
-Texto de Teste para Etapa 1
+Dados dos alunos dop grupo 1 de Sistemas Operacionais do ano de 2020.
+
+Nome: Bruno Adami Serine
+NUSP: 10335920
+
+Nome: Pedro Henrique Carvalho dos Reis
+NUSP: 10337276
+
+Nome: Megumi Tsuru
+NUSP: 10333171
+
+Nome: Victor Henrique O. S. Martins
+NUSP: 10274349
+
+Nome: Isabella de Melo Sousa
+NUSP: 10333355
+
+Nome: Tiago Santa Maria Rodrigues Marto
+NUSP: 9004289
