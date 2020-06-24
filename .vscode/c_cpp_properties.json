@@ -3,13 +3,19 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/linux/include",
+                "${workspaceFolder}/linux/arch/arm/include",
+                "${workspaceFolder}/linux/arch/arm/include/generated",
+                "${workspaceFolder}/linux/arch/arm/include/generated/uapi"
             ],
-            "defines": [],
+            "defines": [
+                "__GNUC__",
+                "__KERNEL__"
+            ],
             "compilerPath": "/usr/bin/cpp",
             "cStandard": "c18",
             "cppStandard": "c++20",
-            "intelliSenseMode": "${default}"
+            "intelliSenseMode": "gcc-arm"
         }
     ],
     "version": 4
