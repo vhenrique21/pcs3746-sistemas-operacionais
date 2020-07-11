@@ -9,15 +9,12 @@ clean:
 		rm -rf build
 		find -name '*.o' -delete
 
-build/rootfs.gz: build/initramfs_root/init build/initramfs_root/cpu_bound build/initramfs_root/io_bound
+build/rootfs.gz: build/initramfs_root/init build/initramfs_root/stop_test
 		cd build/initramfs_root ; \
 		find -type f -print0 | cpio -0 -ov -H newc | gzip -9 > ../rootfs.gz
 
 build/initramfs_root/init: init.o
 		$(CC) -o $@ $^
 
-build/initramfs_root/cpu_bound: cpu_bound.o
-		$(CC) -o $@ $^
-
-build/initramfs_root/io_bound: io_bound.o
+build/initramfs_root/stop_test: stop_test.o
 		$(CC) -o $@ $^

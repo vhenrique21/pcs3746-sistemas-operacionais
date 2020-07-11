@@ -1,7 +1,13 @@
 {
     "debug.node.autoAttach": "off",
-    "C_Cpp.errorSquiggles": "Enabled",
     "files.associations": {
-        "limits": "c"
+        "limits": "c",
+        "cerrno": "c",
+        "unistd.h": "c",
+        "wait.h": "c",
+        "cstdlib": "c",
+        "algorithm": "c",
+        "*.tcc": "c",
+        "memory": "c"
     }
 }
