@@ -1,5 +1,5 @@
 CC=$(CROSS_COMPILE)gcc -Wall -Wextra -Werror -static -g
-USR_BIN_FILES:=tree
+USR_BIN_FILES:=tree linked_list
 
 # End of user configuration
 
