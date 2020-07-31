@@ -8,6 +8,9 @@
         "cstdlib": "c",
         "algorithm": "c",
         "*.tcc": "c",
-        "memory": "c"
+        "memory": "c",
+        "chrono": "c",
+        "random": "c",
+        "typeinfo": "c"
     }
 }

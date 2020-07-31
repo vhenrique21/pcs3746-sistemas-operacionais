@@ -1,0 +1,26 @@
+/ # write_test
+e  
+Writing 67
+read_test[47]
+read_test[49]
+Read item: 67
+e
+Writing c6
+read_test[49]
+read_test[47]
+Read item: c6
+e
+Writing 69
+read_test[47]
+read_test[49]
+Read item: 69
+e
+Writing 73
+read_test[49]
+read_test[47]
+Read item: 73
+e
+Writing 51
+read_test[47]
+read_test[49]
+Read item: 51
