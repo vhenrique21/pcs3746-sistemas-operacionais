@@ -3,8 +3,9 @@
 #include <unistd.h>
 #include <fcntl.h>
 
+/*definindo a estrutura dos nós */
 typedef struct node
-{ /*definindo a estrutura dos nós: Um array de valores e uma lista duplamente ligada */
+{ 
 	int *values;
 	struct node *next;
 	struct node *prev;
@@ -17,21 +18,13 @@ void push(node_t *head)
 	int *matrix = calloc(sizeof(int), 1024);
 	current->values = matrix;
 
-	node_t *temp;
-
-	if (head->next == NULL)
-		temp = head;
-	else
-		temp = head->prev;
+	node_t *temp = head->prev;
 
 	head->prev = current;
 	temp->next = current;
 
 	current->prev = temp;
 	current->next = head;
-	current->values = matrix;
-
-	return;
 }
 
 void print_counter(int i, int push_counter)
@@ -58,6 +51,8 @@ int main(int argc, char *argv[])
 	int debug_mode = atoi(argv[2]);
 
 	node_t *head = (node_t *)malloc(sizeof(node_t));
+	head->prev = head;
+	head->next = head;
 
 	int i = 1;
 	for (; i <= push_counter / 2; i++)
